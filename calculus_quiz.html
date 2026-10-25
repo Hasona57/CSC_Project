@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NU-Hub - About</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html" class="logo">NU-Hub</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="calculus_lecture.html">Calculus Lectures</a>
+            </div>
+        </div>
+        <div class="page">
+            <h1>Calculus Quizzes</h1>
+
+            <div class="box">
+                <h2>Choose a Lecture</h2>
+                <a class="btn" href="#lecture1">lecture 1</a>
+                <a class="btn" href="#lecture2">lecture 2</a>
+                <a class="btn" href="#lecture3">lecture 3</a>
+                <a class="btn" href="#lecture4">lecture 4</a>
+                <a class="btn" href="#lecture5">lecture 5</a>
+                <a class="btn" href="#lecture6">lecture 6</a>
+                <p>Click a lecture to see its flashcards, quiz and links for tutorials and Exams.</p>
+            </div>
+            <div class="lecture" id="lecture1">
+                <h2>Lecture 1</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                    <summary>1. Definition of a Function, Domain, and Range</summary>
+                    <p>
+                        <b>Function (y = f(x)):</b> A relation between x and y where each input value of x has a unique (single) output value of y (e.g., y = x<sup>2</sup> is a function, while y<sup>2</sup> = x is not).<br>
+                        <b>Domain D(f):</b> The set of all possible input values of x (read from left to right on the horizontal axis).<br>
+                        <b>Range R(f):</b> The set of all output values of y (read from bottom to top on the vertical axis).
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>2. Domain Rules for Algebraic Functions</summary>
+                    <p>
+                        <b>Even Root (y = &radic;g(x)):</b> Inside of the root must be non-negative: g(x) &ge; 0.<br>
+                        <b>Rational / Fraction (y = 1 / g(x)):</b> Denominator cannot be zero: g(x) &ne; 0.<br>
+                        <b>Even Root in Denominator (y = 1 / &radic;g(x)):</b> Inside of the root must be strictly positive: g(x) &gt; 0.<br>
+                        <b>Natural Logarithm (y = ln(g(x))):</b> Inside of the logarithm must be strictly positive: g(x) &gt; 0.
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>3. Symmetry: Even and Odd Functions</summary>
+                    <p>
+                        Replace every x with -x in f(x) to test symmetry:<br>
+                        <b>Even Function:</b> f(-x) = f(x) for all x in the domain. Symmetric about the y-axis (e.g., y = x<sup>2</sup>, y = |x|, y = sec(x)).<br>
+                        <b>Odd Function:</b> f(-x) = -f(x) for all x in the domain. Symmetric about the origin (e.g., y = x<sup>3</sup>, y = x, y = csc(x)).<br>
+                        <b>Neither:</b> f(-x) &ne; f(x) and f(-x) &ne; -f(x) (e.g., f(x) = x<sup>3</sup> + 4x<sup>2</sup>).
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>4. Common Parent Functions (Domains &amp; Ranges)</summary>
+                    <p>
+                        <b>y = x<sup>2</sup>, y = x<sup>4</sup>, y = |x|:</b> D(f) = &real;, R(f) = [0, &infin;)<br>
+                        <b>y = x<sup>3</sup>, y = &#8731;x:</b> D(f) = &real;, R(f) = &real;<br>
+                        <b>y = &radic;x, y = &#8732;x:</b> D(f) = [0, &infin;), R(f) = [0, &infin;)<br>
+                        <b>y = 1 / x:</b> D(f) = &real; - {0}, R(f) = &real; - {0}<br>
+                        <b>y = 1 / x<sup>2</sup>:</b> D(f) = &real; - {0}, R(f) = (0, &infin;)<br>
+                        <b>y = &radic;(a<sup>2</sup> - x<sup>2</sup>) (Upper Semicircle):</b> D(f) = [-a, a], R(f) = [0, a]
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>5. Vertical and Horizontal Graph Shifts</summary>
+                    <p>
+                        <b>Vertical Shift (y = f(x) + k):</b> Shifts the graph <b>up</b> k units if k &gt; 0, and <b>down</b> |k| units if k &lt; 0.<br>
+                        <b>Horizontal Shift (y = f(x + h)):</b> Shifts the graph <b>left</b> h units if h &gt; 0, and <b>right</b> |h| units if h &lt; 0.
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>6. Reflections and Absolute Value of a Function</summary>
+                    <p>
+                        <b>X-Axis Reflection (y = -f(x)):</b> Reflects the entire graph of f(x) across the x-axis.<br>
+                        <b>Y-Axis Reflection (y = f(-x)):</b> Reflects the entire graph of f(x) across the y-axis.<br>
+                        <b>Absolute Value (y = |f(x)|):</b> Keeps positive y-values unchanged and reflects only the negative part of the graph (below the x-axis) upward across the x-axis.
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>7. Reciprocal Function Transformation (y = 1 / f(x))</summary>
+                    <p>
+                        <b>Sign:</b> 1 / f(x) has the exact same sign (+ve or -ve) as f(x).<br>
+                        <b>Behavior:</b> Where f(x) is large, 1 / f(x) is small; where f(x) is small, 1 / f(x) is large.<br>
+                        <b>Asymptotes &amp; Limits:</b> As f(x) &rarr; &plusmn;&infin;, 1 / f(x) &rarr; 0. Where f(x) &rarr; 0, 1 / f(x) &rarr; &plusmn;&infin; (vertical asymptote).
+                    </p>
+                    </details>
+                </div>
+                <div class="box">
+                    <h3>Quiz</h3>
+                    <form class="quiz">
+                        <p><b>Question 1:</b> The function f(x) = x<sup>2</sup> csc(5x) is:</p>
+                        <input type="radio" name="q1" value="0"> An even function<br>
+                        <input type="radio" name="q1" value="1"> An odd function<br>
+                        <input type="radio" name="q1" value="0"> Neither even nor odd
+
+                        <p><b>Question 2:</b> The function f(x) = x<sup>2</sup> sec(9x) is:</p>
+                        <input type="radio" name="q2" value="1"> An even function<br>
+                        <input type="radio" name="q2" value="0"> An odd function<br>
+                        <input type="radio" name="q2" value="0"> Neither even nor odd
+
+                        <p><b>Question 3:</b> What is the domain of the function f(x) = 1 / &radic;(k<sup>2</sup> - x<sup>2</sup>)?</p>
+                        <input type="radio" name="q3" value="0"> [-k, k]<br>
+                        <input type="radio" name="q3" value="1"> (-k, k)<br>
+                        <input type="radio" name="q3" value="0"> &real; - {-k, k}
+
+                        <p><b>Question 4:</b> What is the domain of the function f(x) = (1 - x<sup>2</sup>)<sup>0.5</sup>?</p>
+                        <input type="radio" name="q4" value="1"> [-1, 1]<br>
+                        <input type="radio" name="q4" value="0"> (-1, 1)<br>
+                        <input type="radio" name="q4" value="0"> &real; - {-1, 1}
+
+                        <p><b>Question 5:</b> What is the domain of the function f(x) = (81 - |x|)<sup>-0.5</sup>?</p>
+                        <input type="radio" name="q5" value="0"> [-81, 81]<br>
+                        <input type="radio" name="q5" value="0"> (-9, 9)<br>
+                        <input type="radio" name="q5" value="1"> (-81, 81)
+
+                        <p><b>Question 6:</b> What is the domain of the function f(x) = (x<sup>2</sup> - 49)<sup>0.5</sup>?</p>
+                        <input type="radio" name="q6" value="0"> [-7, 7]<br>
+                        <input type="radio" name="q6" value="1"> &real; - (-7, 7)<br>
+                        <input type="radio" name="q6" value="0"> &real; - [-7, 7]
+
+                        <p><b>Question 7:</b> What is the domain of the function f(x) = &radic;(1 - x) / (x<sup>2</sup> - 4)?</p>
+                        <input type="radio" name="q7" value="1"> (-&infin;, 1] - {-2}<br>
+                        <input type="radio" name="q7" value="0"> (-&infin;, 1) - {-2, 2}<br>
+                        <input type="radio" name="q7" value="0"> [1, &infin;) - {2}
+
+                        <p><b>Question 8:</b> What is the domain of the function f(x) = 1 / (2 - &radic;(x - 1))?</p>
+                        <input type="radio" name="q8" value="0"> (1, &infin;) - {3}<br>
+                        <input type="radio" name="q8" value="1"> [1, &infin;) - {5}<br>
+                        <input type="radio" name="q8" value="0"> [1, 5)
+
+                        <p><b>Question 9:</b> How is the graph of y = -f(x + 2) obtained from the graph of f(x)?</p>
+                        <input type="radio" name="q9" value="1"> Shift 2 units left, then reflect across the x-axis<br>
+                        <input type="radio" name="q9" value="0"> Shift 2 units right, then reflect across the y-axis<br>
+                        <input type="radio" name="q9" value="0"> Shift 2 units up, then reflect across the x-axis
+
+                        <p><b>Question 10:</b> How is the graph of y = 1 - f(x + 3) obtained from the graph of f(x)?</p>
+                        <input type="radio" name="q10" value="0"> Shift 3 units right, reflect across the y-axis, and shift 1 unit down<br>
+                        <input type="radio" name="q10" value="1"> Shift 3 units left, reflect across the x-axis, and shift 1 unit up<br>
+                        <input type="radio" name="q10" value="0"> Shift 3 units left, reflect across the y-axis, and shift 1 unit up
+
+                        <br><br>
+                        <p><button type="submit">Submit</button></p>
+                        <p id="result"></p>
+                    </form>
+                </div>
+                <div class="box">
+                    <h3>Additional Quizzes and links</h3>
+                    <ul>
+                        <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for the concept you will find many quizzes)</a></li>
+                        <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards and quizzes)</a></li>
+                        <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy (Calculus 1)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lecture" id="lecture1">
+                <div class="box">
+                    <h3>Additional Quizzes and links</h3>
+                    <ul>
+                        <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for the concept you will find many quizzes)</a></li>
+                        <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards and quizzes)</a></li>
+                        <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy (Calculus 1)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

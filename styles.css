@@ -1,0 +1,196 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eaf0f8;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background: #1b2a49;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #d9962b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.page{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    flex: 1;
+}
+h1, h2, h3{
+    color: #1b2a49;
+}
+a {
+    color: #1b2a49;
+}
+
+.hero{
+    background: #d6e4f7;
+    padding: 40px 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 4px solid #d9962b;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c5d0e0;
+    border-left: 5px solid #2f6db5;
+    border-radius: 4px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border: 1px solid #c5d0e0;
+    border-top: 5px solid #2f6db5;
+    border-radius: 4px;
+}
+.card:hover{
+    border-top-color: #d9962b;
+}
+
+.btn{
+    display: inline-block;
+    background: #1b2a49;
+    color: white;
+    padding: 8px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.btn:hover{
+    background: #3a4f7a;
+}
+button{
+    background: #1b2a49;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover{
+    background: #3a4f7a;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    background: #1b2a49;
+    color: white;
+}
+tr:nth-child(even){
+    background: #e6eef9;
+}
+
+iframe{
+    width: 100%;
+    max-width: 420px;
+    height: 236px;
+    border: 1px solid #999; background: #ddd;
+}
+
+details{
+    border: 1px solid #aab8cf;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f4f8fd;
+}
+details[open]{
+    background: #fff3dc;
+    border-color: #d9962b;
+}
+summary{
+    font-weight: bold;
+    cursor: pointer;
+    color: #1b4f9c;
+}
+details p{
+    margin-bottom: 0;
+}
+label, input[type="radio"]{
+    cursor: pointer;
+}
+.result{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1b2a49;
+}
+
+.lecture{
+    display: none;
+}
+.lecture:target{
+    display: block;
+}
+
+.student{
+    text-align: center;
+    width: 200px;
+}
+.student img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #d9962b;
+    object-fit: cover;
+}
+
+.footer{
+    background: #1b2a49;
+    color: white;
+    display: flex;
+    padding: 5px 40px;
+    justify-content: space-between;
+    gap: 15px;
+    border-top: 4px solid #d9962b;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
