@@ -23,6 +23,9 @@
                 <a class="btn" href="#lecture1">lecture 1</a>
                 <a class="btn" href="#lecture2">lecture 2</a>
                 <a class="btn" href="#lecture3">lecture 3</a>
+                <a class="btn" href="#lecture4">lecture 4</a>
+                <a class="btn" href="#lecture5">lecture 5</a>
+                <a class="btn" href="#lecture6">lecture 6</a>
                 <p>Click a lecture to see its flashcards, quiz and links for tutorials and Exams.</p>
             </div>
             <div class="lecture" id="lecture1">
@@ -41,58 +44,10 @@
                     <details>
                     <summary>2. Domain Rules for Algebraic Functions</summary>
                     <p>
-                        <b>Even Root (y = &radic;g(x)):</b> Inside of the root must be non-negative: g(x) &ge; 0.<br>
-                        <b>Rational / Fraction (y = 1 / g(x)):</b> Denominator cannot be zero: g(x) &ne; 0.<br>
-                        <b>Even Root in Denominator (y = 1 / &radic;g(x)):</b> Inside of the root must be strictly positive: g(x) &gt; 0.<br>
-                        <b>Natural Logarithm (y = ln(g(x))):</b> Inside of the logarithm must be strictly positive: g(x) &gt; 0.
-                    </p>
-                    </details>
-
-                    <details>
-                    <summary>3. Symmetry: Even and Odd Functions</summary>
-                    <p>
-                        Replace every x with -x in f(x) to test symmetry:<br>
-                        <b>Even Function:</b> f(-x) = f(x) for all x in the domain. Symmetric about the y-axis (e.g., y = x<sup>2</sup>, y = |x|, y = sec(x)).<br>
-                        <b>Odd Function:</b> f(-x) = -f(x) for all x in the domain. Symmetric about the origin (e.g., y = x<sup>3</sup>, y = x, y = csc(x)).<br>
-                        <b>Neither:</b> f(-x) &ne; f(x) and f(-x) &ne; -f(x) (e.g., f(x) = x<sup>3</sup> + 4x<sup>2</sup>).
-                    </p>
-                    </details>
-
-                    <details>
-                    <summary>4. Common Parent Functions (Domains &amp; Ranges)</summary>
-                    <p>
-                        <b>y = x<sup>2</sup>, y = x<sup>4</sup>, y = |x|:</b> D(f) = &real;, R(f) = [0, &infin;)<br>
-                        <b>y = x<sup>3</sup>, y = &#8731;x:</b> D(f) = &real;, R(f) = &real;<br>
-                        <b>y = &radic;x, y = &#8732;x:</b> D(f) = [0, &infin;), R(f) = [0, &infin;)<br>
-                        <b>y = 1 / x:</b> D(f) = &real; - {0}, R(f) = &real; - {0}<br>
-                        <b>y = 1 / x<sup>2</sup>:</b> D(f) = &real; - {0}, R(f) = (0, &infin;)<br>
-                        <b>y = &radic;(a<sup>2</sup> - x<sup>2</sup>) (Upper Semicircle):</b> D(f) = [-a, a], R(f) = [0, a]
-                    </p>
-                    </details>
-
-                    <details>
-                    <summary>5. Vertical and Horizontal Graph Shifts</summary>
-                    <p>
-                        <b>Vertical Shift (y = f(x) + k):</b> Shifts the graph <b>up</b> k units if k &gt; 0, and <b>down</b> |k| units if k &lt; 0.<br>
-                        <b>Horizontal Shift (y = f(x + h)):</b> Shifts the graph <b>left</b> h units if h &gt; 0, and <b>right</b> |h| units if h &lt; 0.
-                    </p>
-                    </details>
-
-                    <details>
-                    <summary>6. Reflections and Absolute Value of a Function</summary>
-                    <p>
-                        <b>X-Axis Reflection (y = -f(x)):</b> Reflects the entire graph of f(x) across the x-axis.<br>
-                        <b>Y-Axis Reflection (y = f(-x)):</b> Reflects the entire graph of f(x) across the y-axis.<br>
-                        <b>Absolute Value (y = |f(x)|):</b> Keeps positive y-values unchanged and reflects only the negative part of the graph (below the x-axis) upward across the x-axis.
-                    </p>
-                    </details>
-
-                    <details>
-                    <summary>7. Reciprocal Function Transformation (y = 1 / f(x))</summary>
-                    <p>
-                        <b>Sign:</b> 1 / f(x) has the exact same sign (+ve or -ve) as f(x).<br>
-                        <b>Behavior:</b> Where f(x) is large, 1 / f(x) is small; where f(x) is small, 1 / f(x) is large.<br>
-                        <b>Asymptotes &amp; Limits:</b> As f(x) &rarr; &plusmn;&infin;, 1 / f(x) &rarr; 0. Where f(x) &rarr; 0, 1 / f(x) &rarr; &plusmn;&infin; (vertical asymptote).
+                        <b>Even Root (y = &radic;f(x)):</b> The function under the root must not be negative so it must be larger than or equal to 0: f(x) &ge; 0.<br>
+                        <b>Rational / Fraction (y = 1 / g(x)):</b> Denominator part must not be zero;: g(x) &ne; 0.<br>
+                        <b>Even Root in Denominator (y = 1 / &radic;g(x)):</b> So if we have a function under the root in the denominator, it must be larger than 0 and cannot be eqaul: g(x) &gt; 0.<br>
+                        <b>Natural Logarithm (y = ln(g(x))):</b> Logarithm domain is from always positive: g(x) &gt; 0.
                     </p>
                     </details>
                 </div>
@@ -114,65 +69,260 @@
                         <input type="radio" name="q3" value="1"> (-k, k)<br>
                         <input type="radio" name="q3" value="0"> &real; - {-k, k}
 
-                        <p><b>Question 4:</b> What is the domain of the function f(x) = (1 - x<sup>2</sup>)<sup>0.5</sup>?</p>
-                        <input type="radio" name="q4" value="1"> [-1, 1]<br>
-                        <input type="radio" name="q4" value="0"> (-1, 1)<br>
-                        <input type="radio" name="q4" value="0"> &real; - {-1, 1}
-
-                        <p><b>Question 5:</b> What is the domain of the function f(x) = (81 - |x|)<sup>-0.5</sup>?</p>
-                        <input type="radio" name="q5" value="0"> [-81, 81]<br>
-                        <input type="radio" name="q5" value="0"> (-9, 9)<br>
-                        <input type="radio" name="q5" value="1"> (-81, 81)
-
-                        <p><b>Question 6:</b> What is the domain of the function f(x) = (x<sup>2</sup> - 49)<sup>0.5</sup>?</p>
-                        <input type="radio" name="q6" value="0"> [-7, 7]<br>
-                        <input type="radio" name="q6" value="1"> &real; - (-7, 7)<br>
-                        <input type="radio" name="q6" value="0"> &real; - [-7, 7]
-
-                        <p><b>Question 7:</b> What is the domain of the function f(x) = &radic;(1 - x) / (x<sup>2</sup> - 4)?</p>
-                        <input type="radio" name="q7" value="1"> (-&infin;, 1] - {-2}<br>
-                        <input type="radio" name="q7" value="0"> (-&infin;, 1) - {-2, 2}<br>
-                        <input type="radio" name="q7" value="0"> [1, &infin;) - {2}
-
-                        <p><b>Question 8:</b> What is the domain of the function f(x) = 1 / (2 - &radic;(x - 1))?</p>
-                        <input type="radio" name="q8" value="0"> (1, &infin;) - {3}<br>
-                        <input type="radio" name="q8" value="1"> [1, &infin;) - {5}<br>
-                        <input type="radio" name="q8" value="0"> [1, 5)
-
-                        <p><b>Question 9:</b> How is the graph of y = -f(x + 2) obtained from the graph of f(x)?</p>
-                        <input type="radio" name="q9" value="1"> Shift 2 units left, then reflect across the x-axis<br>
-                        <input type="radio" name="q9" value="0"> Shift 2 units right, then reflect across the y-axis<br>
-                        <input type="radio" name="q9" value="0"> Shift 2 units up, then reflect across the x-axis
-
-                        <p><b>Question 10:</b> How is the graph of y = 1 - f(x + 3) obtained from the graph of f(x)?</p>
-                        <input type="radio" name="q10" value="0"> Shift 3 units right, reflect across the y-axis, and shift 1 unit down<br>
-                        <input type="radio" name="q10" value="1"> Shift 3 units left, reflect across the x-axis, and shift 1 unit up<br>
-                        <input type="radio" name="q10" value="0"> Shift 3 units left, reflect across the y-axis, and shift 1 unit up
-
                         <br><br>
                         <p><button type="submit">Submit</button></p>
-                        <p id="result"></p>
+                        <p class="result"></p>
                     </form>
-                </div>
-                <div class="box">
-                    <h3>Additional Quizzes and links</h3>
-                    <ul>
-                        <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for the concept you will find many quizzes)</a></li>
-                        <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards and quizzes)</a></li>
-                        <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy (Calculus 1)</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="lecture" id="lecture2">
+                <h2>Lecture 2</h2>
                 <div class="box">
-                    <h3>Additional Quizzes and links</h3>
-                    <ul>
-                        <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for the concept you will find many quizzes)</a></li>
-                        <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards and quizzes)</a></li>
-                        <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy (Calculus 1)</a></li>
-                    </ul>
+                    <h3>Flashcards</h3>
+                    <details>
+                    <summary>1. Inverse, Exponential, and Logarithmic Functions</summary>
+                    <p>
+                        <b>One-to-One &amp; Horizontal Line Test:</b> A function has an inverse if and only if it is one-to-one (every horizontal line intersects its graph at most once).<br>
+                        <b>Finding the Inverse f<sup>-1</sup>(x):</b> (1) Check that f(x) is one-to-one, (2) replace f(x) with y, (3) solve for x in terms of y, and (4) swap x and y. The graph of f<sup>-1</sup>(x) is a reflection of f(x) across the line y = x.<br>
+                        <b>Domain, Range &amp; Cancellation:</b> D(f<sup>-1</sup>) = R(f) and R(f<sup>-1</sup>) = D(f). Also, f(f<sup>-1</sup>(x)) = x and f<sup>-1</sup>(f(x)) = x.<br>
+                        <b>Exponential Function (y = a<sup>x</sup>, y = e<sup>x</sup>):</b> Always positive with D(f) = &real; and R(f) = (0, &infin;), passing through (0, 1).<br>
+                        <b>Natural Logarithm (y = ln(x)):</b> Inverse of e<sup>x</sup> with D(f) = (0, &infin;) and R(f) = &real;. Key rules: ln(xy) = ln(x) + ln(y), ln(x / y) = ln(x) - ln(y), and ln(x<sup>r</sup>) = r ln(x).
+                    </p>
+                    </details>
+                    <details>
+                    <summary>2. Derivatives of Exponential and Logarithmic Functions</summary>
+                    <p>
+                        <b>Basic, Product &amp; Quotient Rules:</b> (x<sup>n</sup>)' = nx<sup>n-1</sup>, (f &middot; g)' = f'g + fg', and (f / g)' = (f'g - fg') / g<sup>2</sup>.<br>
+                        <b>Trigonometric Derivatives:</b> (sin x)' = cos x, (cos x)' = -sin x, (tan x)' = sec<sup>2</sup>x, (cot x)' = -csc<sup>2</sup>x, (sec x)' = sec x tan x, (csc x)' = -csc x cot x.<br>
+                        <b>Exponential &amp; Log Derivatives:</b> (e<sup>x</sup>)' = e<sup>x</sup>, (a<sup>x</sup>)' = a<sup>x</sup> ln(a), (ln x)' = 1 / x, and (log<sub>a</sub>x)' = 1 / (x ln(a)).<br>
+                        <b>Chain Rule:</b> d/dx [f(g(x))] = f'(g(x)) &middot; g'(x) (derivative of outside times derivative of.<br>
+                        <b>Implicit &amp; Logarithmic Differentiation:</b> For implicit equations, differentiate both sides with respect to x and multiply y-derivatives by y'. For complex products/quotients or variable powers, try to take ln both sides.
+                    </p>
+                    </details>
+                </div>
+                <div class="box">
+                    <h3>Quiz</h3>
+                    <form class="quiz">
+                        <p><b>Question 1:</b>What is the domain of the function f(x) = ln(ln(x))?</p>
+                        <input type="radio" name="q1" value="0"> (0, &infin;) <br>
+                        <input type="radio" name="q1" value="1"> (1, &infin;) <br>
+                        <input type="radio" name="q1" value="0"> &real; - {0}<br>
+                        <p><b>Question 2:</b> What is the derivative of y = e<sup>sin(2x + 1)</sup>?</p>
+                        <input type="radio" name="q2" value="1"> 2 cos(2x + 1) e<sup>sin(2x + 1)</sup> <br>
+                        <input type="radio" name="q2" value="0"> cos(2x + 1) e<sup>sin(2x + 1)</sup> <br>
+                        <input type="radio" name="q2" value="0"> -2 sin(2x + 1) e<sup>sin(2x + 1)</sup> <br>
+                        <p><b>Question 3:</b> Using logarithmic differentiation, what is the derivative of y = x<sup>x</sup>?</p>
+                        <input type="radio" name="q3" value="0"> x &middot; x<sup>x - 1</sup> <br>
+                        <input type="radio" name="q3" value="0"> x<sup>x</sup> ln(x) <br>
+                        <input type="radio" name="q3" value="1"> x<sup>x</sup>(1 + ln(x))
+                        <br><br>
+                        <p><button type="submit">Submit</button></p>
+                        <p class="result"></p>
+                    </form>
                 </div>
             </div>
+            <div class="lecture" id="lecture3">
+                <h2>Lecture 3</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                    <summary>1. Inverse Trigonometric Functions (Domains, Ranges &amp; Identities)</summary>
+                    <p>
+                        <b>sin<sup>-1</sup>(x) &amp; cos<sup>-1</sup>(x):</b> Both have Domain [-1, 1]. Range of sin<sup>-1</sup>(x) is [-&pi;/2, &pi;/2] (odd), while Range of cos<sup>-1</sup>(x) is [0, &pi;].<br>
+                        <b>tan<sup>-1</sup>(x) &amp; cot<sup>-1</sup>(x):</b> Both have Domain (-&infin;, &infin;). Range of tan<sup>-1</sup>(x) is (-&pi;/2, &pi;/2) (odd), while Range of cot<sup>-1</sup>(x) is (0, &pi;).<br>
+                        <b>sec<sup>-1</sup>(x) &amp; csc<sup>-1</sup>(x):</b> Both have Domain (-&infin;, -1] &cup; [1, &infin;). Range of sec<sup>-1</sup>(x) is [0, &pi;/2) &cup; (&pi;/2, &pi;], and Range of csc<sup>-1</sup>(x) is [-&pi;/2, 0) &cup; (0, &pi;/2] (odd).<br>
+                        <b>Key Identities:</b> sin<sup>-1</sup>(x) + cos<sup>-1</sup>(x) = &pi;/2, tan<sup>-1</sup>(x) + cot<sup>-1</sup>(x) = &pi;/2, sec<sup>-1</sup>(x) + csc<sup>-1</sup>(x) = &pi;/2, sec<sup>-1</sup>(x) = cos<sup>-1</sup>(1/x), and csc<sup>-1</sup>(x) = sin<sup>-1</sup>(1/x).
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>2. Derivatives of Inverse Trigonometric Functions (with Chain Rule)</summary>
+                    <p>
+                        <b>d/dx [sin<sup>-1</sup>(u)]:</b> u' / &radic;(1 - u<sup>2</sup>)<br>
+                        <b>d/dx [cos<sup>-1</sup>(u)]:</b> -u' / &radic;(1 - u<sup>2</sup>)<br>
+                        <b>d/dx [tan<sup>-1</sup>(u)]:</b> u' / (1 + u<sup>2</sup>)<br>
+                        <b>d/dx [cot<sup>-1</sup>(u)]:</b> -u' / (1 + u<sup>2</sup>)<br>
+                        <b>d/dx [sec<sup>-1</sup>(u)]:</b> u' / (|u|&radic;(u<sup>2</sup> - 1))<br>
+                        <b>d/dx [csc<sup>-1</sup>(u)]:</b> -u' / (|u|&radic;(u<sup>2</sup> - 1))
+                    </p>
+                    </details>
+                </div>
+                <div class="box">
+                    <h3>Quiz</h3>
+                    <form class="quiz">
+                        <p><b>Question 1:</b> What is the domain of the function f(x) = &radic;x / (sin<sup>-1</sup>(x) - &pi;/2)?</p>
+                        <input type="radio" name="q1" value="0"> [0, 1]<br>
+                        <input type="radio" name="q1" value="1"> [0, 1)<br>
+                        <input type="radio" name="q1" value="0"> [-1, 1)
+
+                        <p><b>Question 2:</b> What is the exact value of tan(cos<sup>-1</sup>(2/3))?</p>
+                        <input type="radio" name="q2" value="1"> &radic;5 / 2<br>
+                        <input type="radio" name="q2" value="0"> 2 / &radic;5<br>
+                        <input type="radio" name="q2" value="0"> &radic;5 / 3
+
+                        <p><b>Question 3:</b> What is the derivative of y = sin<sup>-1</sup>(e<sup>x</sup>)?</p>
+                        <input type="radio" name="q3" value="0"> 1 / &radic;(1 - e<sup>2x</sup>)<br>
+                        <input type="radio" name="q3" value="0"> -e<sup>x</sup> / &radic;(1 - e<sup>2x</sup>)<br>
+                        <input type="radio" name="q3" value="1"> e<sup>x</sup> / &radic;(1 - e<sup>2x</sup>)
+
+                        <br><br>
+                        <p><button type="submit">Submit</button></p>
+                        <p class="result"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="lecture" id="lecture4">
+                <h2>Lecture 4</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                    <summary>1. Hyperbolic Functions (Definitions, Domains, Ranges &amp; Identities)</summary>
+                    <p>
+                        <b>Definitions:</b> sinh(x) = (e<sup>x</sup> - e<sup>-x</sup>) / 2 [D = &real;, R = &real;, odd], cosh(x) = (e<sup>x</sup> + e<sup>-x</sup>) / 2 [D = &real;, R = [1, &infin;), even], and tanh(x) = sinh(x) / cosh(x) = (e<sup>x</sup> - e<sup>-x</sup>) / (e<sup>x</sup> + e<sup>-x</sup>) [D = &real;, R = (-1, 1), odd].<br>
+                        <b>Reciprocals:</b> sech(x) = 1 / cosh(x) [D = &real;, R = (0, 1], even], csch(x) = 1 / sinh(x) [D = &real; - {0}, R = &real; - {0}, odd], and coth(x) = cosh(x) / sinh(x) [D = &real; - {0}, R = &real; - [-1, 1], odd].<br>
+                        <b>Fundamental Identities:</b> cosh(x) + sinh(x) = e<sup>x</sup>, cosh(x) - sinh(x) = e<sup>-x</sup>, cosh<sup>2</sup>(x) - sinh<sup>2</sup>(x) = 1, 1 - tanh<sup>2</sup>(x) = sech<sup>2</sup>(x), and coth<sup>2</sup>(x) - 1 = csch<sup>2</sup>(x).<br>
+                        <b>Double-Angle Identities:</b> sinh(2x) = 2 sinh(x) cosh(x) and cosh(2x) = cosh<sup>2</sup>(x) + sinh<sup>2</sup>(x).
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>2. Inverse Hyperbolic Functions &amp; Derivatives</summary>
+                    <p>
+                        <b>Hyperbolic Derivatives:</b> (sinh u)' = cosh(u) u', (cosh u)' = sinh(u) u', (tanh u)' = sech<sup>2</sup>(u) u', (coth u)' = -csch<sup>2</sup>(u) u', (sech u)' = -sech(u) tanh(u) u', and (csch u)' = -csch(u) coth(u) u'.<br>
+                        <b>Logarithmic Forms:</b> sinh<sup>-1</sup>(x) = ln(x + &radic;(x<sup>2</sup> + 1)) for all x, cosh<sup>-1</sup>(x) = ln(x + &radic;(x<sup>2</sup> - 1)) for x &ge; 1, and tanh<sup>-1</sup>(x) = 0.5 ln((1 + x) / (1 - x)) for |x| &lt; 1.<br>
+                        <b>Inverse Hyperbolic Derivatives:</b> (sinh<sup>-1</sup>x)' = 1 / &radic;(1 + x<sup>2</sup>), (cosh<sup>-1</sup>x)' = 1 / &radic;(x<sup>2</sup> - 1), (tanh<sup>-1</sup>x)' = 1 / (1 - x<sup>2</sup>) [|x| &lt; 1], (coth<sup>-1</sup>x)' = 1 / (1 - x<sup>2</sup>) [|x| &gt; 1], (sech<sup>-1</sup>x)' = -1 / (x&radic;(1 - x<sup>2</sup>)), and (csch<sup>-1</sup>x)' = -1 / (|x|&radic;(1 + x<sup>2</sup>)).
+                    </p>
+                    </details>
+                </div>
+                <div class="box">
+                    <h3>Quiz</h3>
+                    <form class="quiz">
+                        <p><b>Question 1:</b> What does the expression (1 - tanh(x)) / (1 + tanh(x)) simplify to?</p>
+                        <input type="radio" name="q1" value="0"> e<sup>2x</sup><br>
+                        <input type="radio" name="q1" value="1"> e<sup>-2x</sup><br>
+                        <input type="radio" name="q1" value="0"> sech(2x)
+
+                        <p><b>Question 2:</b> What is the derivative of y = ln(cosh(x)) - e<sup>sinh(x<sup>3</sup>)</sup>?</p>
+                        <input type="radio" name="q2" value="1"> tanh(x) - 3x<sup>2</sup> cosh(x<sup>3</sup>) e<sup>sinh(x<sup>3</sup>)</sup><br>
+                        <input type="radio" name="q2" value="0"> coth(x) - 3x<sup>2</sup> sinh(x<sup>3</sup>) e<sup>sinh(x<sup>3</sup>)</sup><br>
+                        <input type="radio" name="q2" value="0"> sech<sup>2</sup>(x) - cosh(x<sup>3</sup>) e<sup>sinh(x<sup>3</sup>)</sup>
+
+                        <p><b>Question 3:</b> Which logarithmic expression is equivalent to tanh<sup>-1</sup>(x) for |x| &lt; 1?</p>
+                        <input type="radio" name="q3" value="0"> ln(x + &radic;(x<sup>2</sup> + 1))<br>
+                        <input type="radio" name="q3" value="0"> ln(x + &radic;(x<sup>2</sup> - 1))<br>
+                        <input type="radio" name="q3" value="1"> 0.5 ln((1 + x) / (1 - x))
+
+                        <br><br>
+                        <p><button type="submit">Submit</button></p>
+                        <p class="result"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="lecture" id="lecture5">
+                <h2>Lecture 5</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                    <summary>1. L'H&ocirc;pital's Rule for Quotient Indeterminate Forms (0/0 and &infin;/&infin;)</summary>
+                    <p>
+                        <b>L'H&ocirc;pital's Rule:</b> If lim<sub>x&rarr;a</sub> [f(x) / g(x)] produces the indeterminate form 0 / 0 or &infin; / &infin;, then lim<sub>x&rarr;a</sub> [f(x) / g(x)] = lim<sub>x&rarr;a</sub> [f'(x) / g'(x)] (differentiate numerator and denominator separately).<br>
+                        <b>Repeated Application:</b> You can apply L'H&ocirc;pital's Rule multiple times in succession as long as the limit remains in the form 0 / 0 or &infin; / &infin;.<br>
+                        <b>Essential Limits to Remember:</b> e<sup>&infin;</sup> = &infin;, e<sup>-&infin;</sup> = 0, ln(0<sup>+</sup>) = -&infin;, and ln(&infin;) = &infin;.
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>2. Indeterminate Products, Differences, and Powers</summary>
+                    <p>
+                        <b>Indeterminate Products (0 &middot; &infin;):</b> Rewrite f(x) &middot; g(x) as a fraction f(x) / (1 / g(x)) or g(x) / (1 / f(x)) to convert it into 0 / 0 or &infin; / &infin; before applying L'H&ocirc;pital's Rule.<br>
+                        <b>Indeterminate Differences (&infin; - &infin;):</b> Combine the terms into a single fraction using a common denominator to convert into 0 / 0 or &infin; / &infin;.<br>
+                        <b>Indeterminate Powers (1<sup>&infin;</sup>, 0<sup>0</sup>, &infin;<sup>0</sup>):</b> For y = [f(x)]<sup>g(x)</sup>, (1) take the natural log: ln(y) = g(x) ln(f(x)) = ln(f(x)) / (1 / g(x)), (2) find L = lim ln(y) using L'H&ocirc;pital's Rule, and (3) take the exponential: Final Limit = e<sup>L</sup>.
+                    </p>
+                    </details>
+                </div>
+                <div class="box">
+                    <h3>Quiz</h3>
+                    <form class="quiz">
+                        <p><b>Question 1:</b> Evaluate lim<sub>x&rarr;0</sub> [(x - tan(3x)) / (x + sin(5x))].</p>
+                        <input type="radio" name="q1" value="1"> -1 / 3<br>
+                        <input type="radio" name="q1" value="0"> 1 / 3<br>
+                        <input type="radio" name="q1" value="0"> -2 / 5
+
+                        <p><b>Question 2:</b> Evaluate lim<sub>x&rarr;0<sup>+</sup></sub> [x ln(x)].</p>
+                        <input type="radio" name="q2" value="0"> -&infin;<br>
+                        <input type="radio" name="q2" value="1"> 0<br>
+                        <input type="radio" name="q2" value="0"> -1
+
+                        <p><b>Question 3:</b> Evaluate lim<sub>x&rarr;&infin;</sub> (1 - 3/x)<sup>x</sup>.</p>
+                        <input type="radio" name="q3" value="0"> 1<br>
+                        <input type="radio" name="q3" value="0"> 0<br>
+                        <input type="radio" name="q3" value="1"> e<sup>-3</sup>
+
+                        <br><br>
+                        <p><button type="submit">Submit</button></p>
+                        <p class="result"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="lecture" id="lecture6">
+                <h2>Lecture 6</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                    <summary>1. Taylor and Maclaurin Series</summary>
+                    <p>
+                        <b>Taylor Series (at x = c):</b> f(x) = &Sigma; [f<sup>(n)</sup>(c) / n!](x - c)<sup>n</sup> = f(c) + f'(c)(x - c) + [f''(c) / 2!](x - c)<sup>2</sup> + [f'''(c) / 3!](x - c)<sup>3</sup> + ...<br>
+                        <b>Maclaurin Series (at c = 0):</b> f(x) = &Sigma; [f<sup>(n)</sup>(0) / n!]x<sup>n</sup> = f(0) + f'(0)x + [f''(0) / 2!]x<sup>2</sup> + [f'''(0) / 3!]x<sup>3</sup> + ...<br>
+                        <b>Standard Maclaurin Series:</b><br>
+                        &bull; e<sup>x</sup> = 1 + x + x<sup>2</sup>/2! + x<sup>3</sup>/3! + ...<br>
+                        &bull; sin(x) = x - x<sup>3</sup>/3! + x<sup>5</sup>/5! - ... and sinh(x) = x + x<sup>3</sup>/3! + x<sup>5</sup>/5! + ...<br>
+                        &bull; cos(x) = 1 - x<sup>2</sup>/2! + x<sup>4</sup>/4! - ... and cosh(x) = 1 + x<sup>2</sup>/2! + x<sup>4</sup>/4! + ...<br>
+                        &bull; 1 / (1 - x) = 1 + x + x<sup>2</sup> + x<sup>3</sup> + ... and ln(1 - x) = -x - x<sup>2</sup>/2 - x<sup>3</sup>/3 - ...
+                    </p>
+                    </details>
+
+                    <details>
+                    <summary>2. Analytic Geometry: The Circle</summary>
+                    <p>
+                        <b>Center-Radius Form:</b> The equation of a circle with center (h, k) and radius r is (x - h)<sup>2</sup> + (y - k)<sup>2</sup> = r<sup>2</sup>. (If r<sup>2</sup> = 0, it is a single point (h, k); if r<sup>2</sup> &lt; 0, there is no graph).<br>
+                        <b>Completing the Square:</b> Convert x<sup>2</sup> &plusmn; ax + b into (x &plusmn; a/2)<sup>2</sup> - (a/2)<sup>2</sup> + b to find the center and radius from general form.<br>
+                        <b>Tangent &amp; Normal Lines to a Circle:</b> Differentiate implicitly: 2(x - h) + 2(y - k)y' = 0 &rArr; slope of tangent m = y' = (h - x) / (y - k). The slope of the normal line is -1 / m.
+                    </p>
+                    </details>
+                </div>
+                <div class="box">
+                    <h3>Quiz</h3>
+                    <form class="quiz">
+                        <p><b>Question 1:</b> What are the first three non-zero terms of the Maclaurin series for f(x) = x<sup>2</sup>e<sup>x<sup>2</sup></sup>?</p>
+                        <input type="radio" name="q1" value="1"> x<sup>2</sup> + x<sup>4</sup> + x<sup>6</sup> / 2!<br>
+                        <input type="radio" name="q1" value="0"> 1 + x<sup>2</sup> + x<sup>4</sup> / 2!<br>
+                        <input type="radio" name="q1" value="0"> x<sup>2</sup> - x<sup>4</sup> + x<sup>6</sup> / 2!
+
+                        <p><b>Question 2:</b> What are the center and radius of the circle x<sup>2</sup> + y<sup>2</sup> + 6x - 4y = 12?</p>
+                        <input type="radio" name="q2" value="0"> Center (3, -2) and radius r = 5<br>
+                        <input type="radio" name="q2" value="1"> Center (-3, 2) and radius r = 5<br>
+                        <input type="radio" name="q2" value="0"> Center (-3, 2) and radius r = 25
+
+                        <p><b>Question 3:</b> What is the equation of the tangent line to the circle (x - 1)<sup>2</sup> + (y + 2)<sup>2</sup> = 25 at the point (4, 2)?</p>
+                        <input type="radio" name="q3" value="0"> y = (4/3)x - 10/3<br>
+                        <input type="radio" name="q3" value="0"> y = (3/4)x - 1<br>
+                        <input type="radio" name="q3" value="1"> y = -(3/4)x + 5
+
+                        <br><br>
+                        <p><button type="submit">Submit</button></p>
+                        <p class="result"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Additional Quizzes and links</h3>
+                <ul>
+                    <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for the concept you will find many quizzes)</a></li>
+                    <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards and quizzes)</a></li>
+                    <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy (Calculus 1)</a></li>
+                </ul>
+            </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
