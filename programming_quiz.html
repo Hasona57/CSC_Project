@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU-Hub - C++ Programming Quiz</title>
+    <!-- Linking to your shared team styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Shared Team Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="logo">NU-Hub</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programming_lecture.html">C++ Learning Hub</a>
+        </div>
+    </div>
+
+    <!-- Main Page Container -->
+    <div class="page">
+        <h1>C++ Practice & Quizzes</h1>
+        
+        <div class="box">
+            <h2>Test Your Knowledge</h2>
+            <p>Review the exercises below to test your understanding of C++ fundamentals, variables, and basic logic. Click on each exercise to reveal its code solution and a simple breakdown.</p>
+        </div>
+
+        <!-- Exercise 1: Temperature Conversion -->
+        <div class="box">
+            <h2>Exercise 1: Temperature Conversion</h2>
+            <p><b>Task:</b> Write a program that reads a temperature in Celsius from the user (as a decimal number), converts it to Fahrenheit, and displays the calculated result clearly on the screen.</p>
+            <p>Formula to use: <code>Fahrenheit = (Celsius * 9.0 / 5.0) + 32.0</code></p>
+            
+            <details>
+                <summary>Click to view Solution & Explanation</summary>
+                <div style="margin-top: 10px;">
+                    <h3>Source Code Solution:</h3>
+                    <pre style="background: #fff; padding: 10px; border: 1px dashed #aaa; font-family: monospace;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    float celsius, fahrenheit;
+    cout << "Enter Temperature in Celsius: ";
+    cin >> celsius;
+    
+    fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+    cout << "Your Temperature in Fahrenheit = " << fahrenheit << " F" << endl;
+    
+    return 0;
+}</pre>
+                    
+                    <h3>Explanation:</h3>
+                    <ul>
+                        <li><b>float variables:</b> We use <code>float</code> instead of <code>int</code> so our program can work with numbers that have decimal points (like 24.5 degrees).</li>
+                        <li><b>Basic Math:</b> The program multiplies the input by 9.0, divides it by 5.0, and adds 32 to get the correct Fahrenheit value.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <!-- Exercise 2: Rectangle Area and Perimeter -->
+        <div class="box">
+            <h2>Exercise 2: Rectangle Dimensions</h2>
+            <p><b>Task:</b> Write a program that prompts the user to input the length and width of a rectangle as floating-point values. The program must calculate and output its total area and perimeter.</p>
+            
+            <details>
+                <summary>Click to view Solution & Explanation</summary>
+                <div style="margin-top: 10px;">
+                    <h3>Source Code Solution:</h3>
+                    <pre style="background: #fff; padding: 10px; border: 1px dashed #aaa; font-family: monospace;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    double length, width;
+    cout << "Enter the length: ";
+    cin >> length;
+    cout << "Enter the width: ";
+    cin >> width;
+    
+    cout << "Area      = " << length * width << endl;
+    cout << "Perimeter = " << 2 * (length + width) << endl;
+    
+    return 0;
+}</pre>
+                    
+                    <h3>Explanation:</h3>
+                    <ul>
+                        <li><b>Data Types:</b> <code>length</code> and <code>width</code> are declared as <code>double</code> so that the user can safely type in decimal configurations (like 5.5) without losing precision.</li>
+                        <li><b>Interactive Streams:</b> <code>cin</code> takes user values from the terminal screen and passes them into our declared storage variables dynamically.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <!-- Exercise 3: Distance and Slope Between Two Points -->
+        <div class="box">
+            <h2>Exercise 3: Distance and Slope Between Two Points</h2>
+            <p><b>Task:</b> Write a program that asks the user to type in the grid coordinates for two separate points: (x1, y1) and (x2, y2). The program should then calculate and show two things: the straight-line distance between those points, and the slope of the line connecting them.</p>
+            
+            <details>
+                <summary>Click to view Solution & Explanation</summary>
+                <div style="margin-top: 10px;">
+                    <h3>Source Code Solution:</h3>
+                    <pre style="background: #fff; padding: 10px; border: 1px dashed #aaa; font-family: monospace;">
+#include &lt;iostream&gt;
+#include &lt;cmath&gt; // Required for sqrt and pow
+using namespace std;
+
+int main() 
+{
+    double x1, y1, x2, y2;
+    cout << "Enter x1 y1: ";
+    cin >> x1 >> y1;
+    cout << "Enter x2 y2: ";
+    cin >> x2 >> y2;
+    
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    double slope = (y2 - y1) / (x2 - x1);
+    
+    cout << "Distance = " << distance << endl;
+    cout << "Slope    = " << slope << endl;
+    
+    return 0;
+}</pre>
+                    
+                    <h3>Explanation:</h3>
+                    <ul>
+                        <li><b>cmath Library:</b> Including <code>&lt;cmath&gt;</code> is essential here because it lets us use built-in math tools like <code>pow()</code> to square numbers and <code>sqrt()</code> to find square roots.</li>
+                        <li><b>Parentheses Order:</b> Putting brackets around <code>(y2 - y1)</code> and <code>(x2 - x1)</code> tells the computer to finish the subtraction blocks first before dividing them.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+    </div>
+
+    <!-- Shared Team Footer Bar -->
+    <div class="footer">
+        <b>NU-Hub</b>
+        <div>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+</body>
+</html>
