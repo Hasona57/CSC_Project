@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU-Hub - Engineering Mechanics Lectures</title>
+    <!-- Linking to your shared team styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Shared Team Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="logo">NU-Hub</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mechanics_quiz.html">Mechanics Quizzes</a>
+        </div>
+    </div>
+
+    <!-- Main Page Container -->
+    <div class="page">
+        
+        <h1>Engineering Mechanics</h1>
+
+        <!-- Course Overview Box -->
+        <div class="box">
+            <h2>Course Overview — Fall Term</h2>
+            <p>These are my running notes for Engineering Mechanics this semester. The course is split between statics in the first half and an introduction to dynamics in the second half, and most weeks build directly on the last, so I'm keeping everything in one place instead of scattered across notebooks.</p>
+            <p>The general sequence we're following looks like this:</p>
+            <ul>
+                <li>Vectors, forces, and moments</li>
+                <li>Equilibrium of a particle and of rigid bodies</li>
+                <li>Analysis of structures — trusses, frames, and machines</li>
+                <li>Friction</li>
+                <li>Centroids and center of gravity</li>
+                <li>Moments of inertia of areas</li>
+                <li>Kinematics and kinetics of particles (intro to dynamics)</li>
+            </ul>
+            <p><b>Note:</b> Mostly for myself before quizzes — if something here looks off, it's probably my mistake, not the lecturer's.</p>
+        </div>
+
+        <!-- Study Approach Box -->
+        <div class="box">
+            <h2>Study Guide &amp; Approach</h2>
+            <h3>Why this matters</h3>
+            <p>Statics shows up again almost immediately in structures and machine design courses later on, so the habit I'm trying to build this semester is drawing a clean, labeled free-body diagram before writing a single equation. Most of the mistakes I've made on homework so far trace back to a missing or wrong force in the diagram, not the algebra after it.</p>
+            
+            <hr style="border: 0; border-top: 1px solid #c5d0e0; margin: 20px 0;">
+
+            <h3>How I'm studying</h3>
+            <p>I redo each problem set a second time about a week later without looking at my first attempt, and I keep a short list of "traps" — things like forgetting a reaction moment at a fixed support, or mixing up sign conventions between two free-body diagrams in the same problem.</p>
+        </div>
+
+        <!-- Topic Notes Boxes -->
+        <div class="box">
+            <h2>1. Forces and Moments</h2>
+            <p>A force is defined by magnitude, direction, and point of application. The moment of a force about a point is <code>M = F × d</code>, where <code>d</code> is the perpendicular distance from the point to the line of action of the force. Varignon's theorem lets you split a force into components and sum the moments of each component instead of computing the moment directly — useful when the geometry is awkward.</p>
+        </div>
+
+        <div class="box">
+            <h2>2. Equilibrium of a Particle</h2>
+            <p>For a particle, equilibrium just means the vector sum of forces is zero: <code>ΣFx = 0, ΣFy = 0</code>. The hard part is almost never the equations — it's drawing the free-body diagram correctly and getting tension/compression directions right in cables and two-force members.</p>
+        </div>
+
+        <div class="box">
+            <h2>3. Rigid Body Equilibrium</h2>
+            <p>Adds a third equation, <code>ΣM = 0</code>, about any convenient point. Picking the point where unknown forces intersect removes them from that equation and usually saves a step. Supports matter here: a pin gives two reaction components, a roller gives one, a fixed support gives two forces plus a reaction moment.</p>
+        </div>
+    </div>
+
+    <!-- Shared Team Footer Bar -->
+    <div class="footer">
+        <b>NU-Hub</b>
+        <div>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+</body>
+</html>
