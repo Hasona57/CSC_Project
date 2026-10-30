@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU-Hub - Engineering Mechanics Quiz</title>
+    <!-- Linking to your shared team styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Shared Team Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="logo">NU-Hub</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mechanics_lecture.html">Mechanics Lectures</a>
+        </div>
+    </div>
+
+    <!-- Main Page Container -->
+    <div class="page">
+        <h1>Engineering Mechanics Practice &amp; Quizzes</h1>
+        
+        <div class="box">
+            <h2>Test Your Knowledge</h2>
+            <p>Review the problems below to test your understanding of statics, equilibrium, friction, and particle kinematics. Click on each problem to reveal its step-by-step solution and key takeaways.</p>
+        </div>
+
+        <!-- Exercise 1: Forces and Moments -->
+        <div class="box">
+            <h2>Exercise 1: Moment of a Force</h2>
+            <p><b>Task:</b> A force of <code>F = 100 N</code> is applied at an angle of <code>30°</code> above the horizontal to the end of a horizontal lever arm of length <code>d = 2.0 m</code> attached to a pivot at point O. Calculate the magnitude of the moment about point O.</p>
+            <p>Formula to use: <code>M = Fy × d = (F · sin(θ)) × d</code></p>
+            
+            <details>
+                <summary>Click to view Solution &amp; Explanation</summary>
+                <div style="margin-top: 10px;">
+                    <h3>Step-by-Step Solution:</h3>
+                    <pre style="background: #fff; padding: 10px; border: 1px dashed #aaa; font-family: monospace;">
+Fx = 100 * cos(30°) = 86.6 N  (passes through pivot O, so moment arm = 0)
+Fy = 100 * sin(30°) = 50.0 N  (perpendicular to the 2.0 m lever arm)
+
+Mo = Fy * d
+Mo = 50.0 N * 2.0 m = 100 N·m (counter-clockwise)</pre>
+                    
+                    <h3>Explanation:</h3>
+                    <ul>
+                        <li><b>Varignon's Theorem:</b> Instead of finding the perpendicular distance to the angled line of action, we split the force into horizontal (<code>Fx</code>) and vertical (<code>Fy</code>) components.</li>
+                        <li><b>Line of Action:</b> Since <code>Fx</code> passes directly through point O, it produces zero moment, leaving only <code>Fy × d</code>.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <div class="box">
+            <h2>Exercise 2: Rigid Body with Pin and Cable</h2>
+            <p><b>Task:</b> A horizontal rigid beam of length <code>4 m</code> is attached to a wall by a pin at Point A. The other end, Point B, is supported by a cable that connects to the wall, making a <code>30°</code> angle with the beam. A downward load of <code>1000 N</code> rests on the beam at a distance of <code>3 m</code> from the pin. Determine the tension (<code>T</code>) in the cable and the horizontal and vertical reactions at the pin (<code>Ax</code> and <code>Ay</code>).</p>
+            <p>Formulas to use: <code>ΣMA = 0</code>, <code>ΣFx = 0</code>, and <code>ΣFy = 0</code></p>
+            
+            <details>
+                <summary>Click to view Solution & Explanation</summary>
+                <div style="margin-top: 10px;">
+                    <h3>Step-by-Step Solution:</h3>
+                    <pre style="background: #fff; padding: 10px; border: 1px dashed #aaa;"><code style="font-family: monospace; display: block;">
+1. Take moments about the pin at Point A (ΣMA = 0):
+   -(1000 N * 3 m) + (Ty * 4 m) = 0
+   -3000 + (T * sin(30°) * 4) = 0
+   -3000 + (T * 0.5 * 4) = 0
+   2 * T = 3000
+   T = 1500 N (Tension in the cable)
+
+2. Sum horizontal forces (ΣFx = 0):
+   Ax - Tx = 0
+   Ax - (T * cos(30°)) = 0
+   Ax - (1500 * 0.866) = 0
+   Ax = 1299 N (acting to the right)
+
+3. Sum vertical forces (ΣFy = 0):
+   Ay + Ty - 1000 = 0
+   Ay + (1500 * 0.5) - 1000 = 0
+   Ay + 750 - 1000 = 0
+   Ay = 250 N (acting upward)
+</code></pre>
+                    
+                    <h3>Explanation:</h3>
+                    <ul>
+                        <li><b>Decomposing the Tension:</b> The cable pulls at an angle, so we split it into a vertical part (<code>Ty = T * sin(30°)</code>) that holds the beam up, and a horizontal part (<code>Tx = T * cos(30°)</code>) that pushes the beam into the wall.</li>
+                        <li><b>Moments first:</b> Taking moments around the pin at A is the best first step because the unknown pin forces (<code>Ax</code> and <code>Ay</code>) pass straight through it and create zero moment. This leaves <code>T</code> as the only unknown in the first equation.</li>
+                        <li><b>Pin Reactions:</b> Unlike a simple roller, a pin support resists movement in <i>both</i> directions, which is why we must solve for both <code>Ax</code> and <code>Ay</code> using the X and Y force equations.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <!-- Shared Team Footer Bar -->
+    <div class="footer">
+        <b>NU-Hub</b>
+        <div>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+</body>
+</html>
