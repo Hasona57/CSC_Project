@@ -1,1 +1,247 @@
-ff
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NU-Hub - Physics Flashcards</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html" class="logo">NU-Hub</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="physics_lecture.html">Physics Lectures</a>
+            </div>
+        </div>
+        <div class="page">
+            <h1>Physics Flashcards</h1>
+
+            <div class="box">
+                <h2>Choose a Lecture</h2>
+                <a class="btn" href="#lecture1">Lecture 1</a>
+                <a class="btn" href="#lecture2">Lecture 2</a>
+                <a class="btn" href="#lecture3">Lecture 3</a>
+                <a class="btn" href="#lecture4">Lecture 4</a>
+                <a class="btn" href="#lecture5">Lecture 5</a>
+                <a class="btn" href="#lecture6">Lecture 6</a>
+                <p>Click a lecture to view its core concept flashcards, tutorials, and exam links.</p>
+            </div>
+
+            <div class="lecture" id="lecture1">
+                <h2>Lecture 1</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                        <summary>1. Definition of a Function, Domain, and Range</summary>
+                        <p>
+                            <b>Function (y = f(x)):</b> A relation between x and y where each input value of x has a unique (single) output value of y.<br>
+                            <b>Domain D(f):</b> The set of all possible input values of x.<br>
+                            <b>Range R(f):</b> The set of all output values of y.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>2. Domain Rules for Algebraic Functions</summary>
+                        <p>
+                            <b>Even Root:</b> Expression under the root must be &ge; 0.<br>
+                            <b>Rational / Fraction:</b> Denominator must not be zero (&ne; 0).<br>
+                            <b>Natural Logarithm:</b> Argument must be strictly positive (&gt; 0).
+                        </p>
+                    </details>
+                    <details>
+                        <summary>3. Even and Odd Functions</summary>
+                        <p>
+                            <b>Even Function:</b> f(-x) = f(x) (symmetric about the y-axis).<br>
+                            <b>Odd Function:</b> f(-x) = -f(x) (symmetric about the origin).
+                        </p>
+                    </details>
+                    <details>
+                        <summary>4. Composite Functions</summary>
+                        <p>
+                            <b>Definition:</b> Combining two functions where the output of one function becomes the input of another, written as $(f \circ g)(x) = f(g(x))$.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>5. Shifting and Scaling Graphs</summary>
+                        <p>
+                            <b>Vertical Shift:</b> $f(x) + c$ shifts the graph upward by $c$ units.<br>
+                            <b>Horizontal Shift:</b> $f(x - c)$ shifts the graph to the right by $c$ units.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>6. Absolute Value Functions</summary>
+                        <p>
+                            <b>Definition:</b> $|x| = x$ if $x \ge 0$, and $-x$ if $x < 0$. Represents the distance of $x$ from zero on the number line.
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="lecture" id="lecture2">
+                <h2>Lecture 2</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                        <summary>1. One-to-One Functions & Horizontal Line Test</summary>
+                        <p>A function has an inverse if and only if it is one-to-one (every horizontal line intersects its graph at most once).</p>
+                    </details>
+                    <details>
+                        <summary>2. Finding the Inverse Function f<sup>-1</sup>(x)</summary>
+                        <p>Replace $f(x)$ with $y$, solve for $x$ in terms of $y$, and swap $x$ and $y$. Reflected across the line $y = x$.</p>
+                    </details>
+                    <details>
+                        <summary>3. Domain, Range & Cancellation Properties</summary>
+                        <p>$D(f^{-1}) = R(f)$ and $R(f^{-1}) = D(f)$. Also, $f(f^{-1}(x)) = x$ and $f^{-1}(f(x)) = x$.</p>
+                    </details>
+                    <details>
+                        <summary>4. Exponential Functions (y = a<sup>x</sup>)</summary>
+                        <p>Always positive with $D(f) = \mathbb{R}$ and $R(f) = (0, \infty)$, passing through the point $(0, 1)$.</p>
+                    </details>
+                    <details>
+                        <summary>5. Natural Logarithm (y = ln(x))</summary>
+                        <p>Inverse of $e^x$ with $D(f) = (0, \infty)$ and $R(f) = \mathbb{R}$. Rules: $\ln(xy) = \ln(x) + \ln(y)$.</p>
+                    </details>
+                    <details>
+                        <summary>6. Derivatives of Exponentials and Logs</summary>
+                        <p>$(e^x)' = e^x$, $(a^x)' = a^x \ln(a)$, $(\ln x)' = 1 / x$, and $(\log_a x)' = 1 / (x \ln(a))$.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="lecture" id="lecture3">
+                <h2>Lecture 3</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                        <summary>1. Inverse Trig: sin<sup>-1</sup>(x) & cos<sup>-1</sup>(x)</summary>
+                        <p>Both have Domain $[-1, 1]$. Range of $\sin^{-1}(x)$ is $[-\pi/2, \pi/2]$, while Range of $\cos^{-1}(x)$ is $[0, \pi]$.</p>
+                    </details>
+                    <details>
+                        <summary>2. Inverse Trig: tan<sup>-1</sup>(x) & cot<sup>-1</sup>(x)</summary>
+                        <p>Both have Domain $(-\infty, \infty)$. Range of $\tan^{-1}(x)$ is $(-\pi/2, \pi/2)$, while Range of $\cot^{-1}(x)$ is $(0, \pi)$.</p>
+                    </details>
+                    <details>
+                        <summary>3. Inverse Trig: sec<sup>-1</sup>(x) & csc<sup>-1</sup>(x)</summary>
+                        <p>Both have Domain $(-\infty, -1] \cup [1, \infty)$. Ranges correspond to restricted domains of their reciprocal functions.</p>
+                    </details>
+                    <details>
+                        <summary>4. Key Inverse Trig Identities</summary>
+                        <p>$\sin^{-1}(x) + \cos^{-1}(x) = \pi/2$, $\tan^{-1}(x) + \cot^{-1}(x) = \pi/2$, and $\sec^{-1}(x) = \cos^{-1}(1/x)$.</p>
+                    </details>
+                    <details>
+                        <summary>5. Derivatives of Inverse Sine & Cosine</summary>
+                        <p>$\frac{d}{dx}[\sin^{-1}(u)] = \frac{u'}{\sqrt{1 - u^2}}$ and $\frac{d}{dx}[\cos^{-1}(u)] = \frac{-u'}{\sqrt{1 - u^2}}$.</p>
+                    </details>
+                    <details>
+                        <summary>6. Derivatives of Inverse Tangent & Secant</summary>
+                        <p>$\frac{d}{dx}[\tan^{-1}(u)] = \frac{u'}{1 + u^2}$ and $\frac{d}{dx}[\sec^{-1}(u)] = \frac{u'}{|u|\sqrt{u^2 - 1}}$.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="lecture" id="lecture4">
+                <h2>Lecture 4</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                        <summary>1. Definitions of Hyperbolic Functions</summary>
+                        <p>$\sinh(x) = \frac{e^x - e^{-x}}{2}$, $\cosh(x) = \frac{e^x + e^{-x}}{2}$, and $\tanh(x) = \frac{\sinh(x)}{\cosh(x)}$.</p>
+                    </details>
+                    <details>
+                        <summary>2. Reciprocal Hyperbolic Functions</summary>
+                        <p>$\text{sech}(x) = \frac{1}{\cosh(x)}$, $\text{csch}(x) = \frac{1}{\sinh(x)}$, and $\text{coth}(x) = \frac{\cosh(x)}{\sinh(x)}$.</p>
+                    </details>
+                    <details>
+                        <summary>3. Fundamental Hyperbolic Identities</summary>
+                        <p>$\cosh^2(x) - sinh^2(x) = 1$, $1 - \tanh^2(x) = \text{sech}^2(x)$, and $\text{coth}^2(x) - 1 = \text{csch}^2(x)$.</p>
+                    </details>
+                    <details>
+                        <summary>4. Hyperbolic Derivatives</summary>
+                        <p>$(\sinh u)' = \cosh(u)u'$, $(\cosh u)' = \sinh(u)u'$, and $(\tanh u)' = \text{sech}^2(u)u'$.</p>
+                    </details>
+                    <details>
+                        <summary>5. Logarithmic Forms of Inverse Hyperbolic Functions</summary>
+                        <p>$\sinh^{-1}(x) = \ln(x + \sqrt{x^2 + 1})$ and $\cosh^{-1}(x) = \ln(x + \sqrt{x^2 - 1})$ for $x \ge 1$.</p>
+                    </details>
+                    <details>
+                        <summary>6. Inverse Hyperbolic Derivatives</summary>
+                        <p>$(\sinh^{-1}x)' = \frac{1}{\sqrt{1 + x^2}}$ and $(\tanh^{-1}x)' = \frac{1}{1 - x^2}$ for $|x| < 1$.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="lecture" id="lecture5">
+                <h2>Lecture 5</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                        <summary>1. L'H&ocirc;pital's Rule Basics</summary>
+                        <p>If $\lim \frac{f(x)}{g(x)}$ produces $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then $\lim \frac{f(x)}{g(x)} = \lim \frac{f'(x)}{g'(x)}$.</p>
+                    </details>
+                    <details>
+                        <summary>2. Repeated Application of L'H&ocirc;pital's Rule</label></summary>
+                        <p>You can apply L'H&ocirc;pital's Rule multiple times consecutively as long as the limit remains an indeterminate form.</p>
+                    </details>
+                    <details>
+                        <summary>3. Indeterminate Products (0 &middot; &infin;)</summary>
+                        <p>Rewrite $f(x) \cdot g(x)$ as a fraction $\frac{f(x)}{1/g(x)}$ or $\frac{g(x)}{1/f(x)}$ to apply L'H&ocirc;pital's Rule.</p>
+                    </details>
+                    <details>
+                        <summary>4. Indeterminate Differences (&infin; - &infin;)</summary>
+                        <p>Combine terms into a single fraction using a common denominator before evaluating limits.</p>
+                    </details>
+                    <details>
+                        <summary>5. Indeterminate Powers (1<sup>&infin;</sup>, 0<sup>0</sup>, &infin;<sup>0</sup>)</summary>
+                        <p>For $y = [f(x)]^{g(x)}$, take natural logs: $\ln(y) = g(x)\ln(f(x))$, evaluate the limit, and use $e^L$.</p>
+                    </details>
+                    <details>
+                        <summary>6. Essential Standard Limits</summary>
+                        <p>Memorize foundational limits like $e^\infty = \infty$, $e^{-\infty} = 0$, and $\ln(0^+) = -\infty$.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="lecture" id="lecture6">
+                <h2>Lecture 6</h2>
+                <div class="box">
+                    <h3>Flashcards</h3>
+                    <details>
+                        <summary>1. Taylor Series Formula</summary>
+                        <p>$f(x) = \sum \frac{f^{(n)}(c)}{n!}(x - c)^n = f(c) + f'(c)(x - c) + \frac{f''(c)}{2!}(x - c)^2 + \dots$</p>
+                    </details>
+                    <details>
+                        <summary>2. Maclaurin Series Formula</summary>
+                        <p>A Taylor series centered at $c = 0$: $f(x) = \sum \frac{f^{(n)}(0)}{n!}x^n = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \dots$</p>
+                    </details>
+                    <details>
+                        <summary>3. Standard Maclaurin Expansions</summary>
+                        <p>$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$ and $\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots$</p>
+                    </details>
+                    <details>
+                        <summary>4. Center-Radius Form of a Circle</summary>
+                        <p>The equation of a circle with center $(h, k)$ and radius $r$ is $(x - h)^2 + (y - k)^2 = r^2$.</p>
+                    </details>
+                    <details>
+                        <summary>5. Completing the Square</label></summary>
+                        <p>Convert general quadratic expressions $x^2 \pm ax + b$ into vertex/center-radius form to isolate $(h, k)$ and $r$.</p>
+                    </details>
+                    <details>
+                        <summary>6. Tangent & Normal Lines to a Circle</label></summary>
+                        <p>Find the tangent slope using implicit differentiation ($y' = \frac{h-x}{y-k}$). The normal slope is $-1/m$.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Additional Resources and Links</h3>
+                <ul>
+                    <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for concepts)</a></li>
+                    <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards)</a></li>
+                    <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
