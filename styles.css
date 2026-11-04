@@ -128,7 +128,8 @@ iframe{
     width: 100%;
     max-width: 420px;
     height: 236px;
-    border: 1px solid #999; background: #ddd;
+    border: 1px solid #999; 
+    background: #ddd;
 }
 
 details{
