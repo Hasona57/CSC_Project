@@ -20,215 +20,244 @@
 
             <div class="box">
                 <h2>Choose a Lecture</h2>
-                <a class="btn" href="#lecture1">Lecture 1</a>
-                <a class="btn" href="#lecture2">Lecture 2</a>
-                <a class="btn" href="#lecture3">Lecture 3</a>
-                <a class="btn" href="#lecture4">Lecture 4</a>
-                <a class="btn" href="#lecture5">Lecture 5</a>
-                <a class="btn" href="#lecture6">Lecture 6</a>
-                <p>Click a lecture to view its core concept flashcards, tutorials, and exam links.</p>
+                <a class="btn" href="#lecture1">Dimensions and Units</a>
+                <a class="btn" href="#lecture2">Elasticity</a>
+                <a class="btn" href="#lecture3">Fluid Statics</a>
+                <a class="btn" href="#lecture4">Fluid Dynamics</a>
+                <a class="btn" href="#lecture5">Oscillatory Motion</a>
+                <a class="btn" href="#lecture6">Waves</a>
+                <p>Click a lecture to view its core concept flashcards.</p>
             </div>
 
             <div class="lecture" id="lecture1">
-                <h2>Lecture 1</h2>
+                <h2>Lecture 1: Dimensions and Units</h2>
                 <div class="box">
                     <h3>Flashcards</h3>
                     <details>
-                        <summary>1. Definition of a Function, Domain, and Range</summary>
+                        <summary>1. SI Base Quantities and Units</summary>
                         <p>
-                            <b>Function (y = f(x)):</b> A relation between x and y where each input value of x has a unique (single) output value of y.<br>
-                            <b>Domain D(f):</b> The set of all possible input values of x.<br>
-                            <b>Range R(f):</b> The set of all output values of y.
+                            <b>Length:</b> meter (m)<br>
+                            <b>Mass:</b> kilogram (kg)<br>
+                            <b>Time:</b> second (s)<br>
+                            <b>Temperature:</b> kelvin (K)<br>
+                            <b>Electric current:</b> ampere (A)<br>
+                            <b>Amount of substance:</b> mole (mol)<br>
+                            <b>Luminous intensity:</b> candela (cd)
                         </p>
                     </details>
                     <details>
-                        <summary>2. Domain Rules for Algebraic Functions</summary>
+                        <summary>2. Dimensions of Basic Quantities</summary>
                         <p>
-                            <b>Even Root:</b> Expression under the root must be &ge; 0.<br>
-                            <b>Rational / Fraction:</b> Denominator must not be zero (&ne; 0).<br>
-                            <b>Natural Logarithm:</b> Argument must be strictly positive (&gt; 0).
+                            Length $= [L]$, Mass $= [M]$, Time $= [T]$. Every mechanical quantity can be written as a combination of these three dimensions.
                         </p>
                     </details>
                     <details>
-                        <summary>3. Even and Odd Functions</summary>
+                        <summary>3. Dimensions of Common Derived Quantities</summary>
                         <p>
-                            <b>Even Function:</b> f(-x) = f(x) (symmetric about the y-axis).<br>
-                            <b>Odd Function:</b> f(-x) = -f(x) (symmetric about the origin).
+                            Velocity: $[LT^{-1}]$, Acceleration: $[LT^{-2}]$, Force: $[MLT^{-2}]$,<br>
+                            Energy / Work: $[ML^2T^{-2}]$, Power: $[ML^2T^{-3}]$, Pressure: $[ML^{-1}T^{-2}]$, Density: $[ML^{-3}]$.
                         </p>
                     </details>
                     <details>
-                        <summary>4. Composite Functions</summary>
+                        <summary>4. Dimensional Homogeneity</summary>
                         <p>
-                            <b>Definition:</b> Combining two functions where the output of one function becomes the input of another, written as $(f \circ g)(x) = f(g(x))$.
+                            Every term in a physically correct equation must have the same dimensions. Only quantities with the same dimensions can be added or subtracted. Arguments of trigonometric, exponential, and logarithmic functions must be dimensionless.
                         </p>
                     </details>
                     <details>
-                        <summary>5. Shifting and Scaling Graphs</summary>
+                        <summary>5. Uses and Limits of Dimensional Analysis</summary>
                         <p>
-                            <b>Vertical Shift:</b> $f(x) + c$ shifts the graph upward by $c$ units.<br>
-                            <b>Horizontal Shift:</b> $f(x - c)$ shifts the graph to the right by $c$ units.
+                            <b>Uses:</b> check the correctness of an equation, derive the form of a relation between quantities, and convert between unit systems.<br>
+                            <b>Limits:</b> it cannot determine dimensionless constants (such as $2\pi$ or $\tfrac{1}{2}$) and cannot handle sums of different functions.
                         </p>
                     </details>
                     <details>
-                        <summary>6. Absolute Value Functions</summary>
+                        <summary>6. Unit Prefixes and Conversion</summary>
                         <p>
-                            <b>Definition:</b> $|x| = x$ if $x \ge 0$, and $-x$ if $x < 0$. Represents the distance of $x$ from zero on the number line.
+                            giga (G) $= 10^{9}$, mega (M) $= 10^{6}$, kilo (k) $= 10^{3}$, milli (m) $= 10^{-3}$, micro ($\mu$) $= 10^{-6}$, nano (n) $= 10^{-9}$.<br>
+                            To convert units, multiply by conversion factors equal to 1 (e.g. $1\ \text{km} = 1000\ \text{m}$) so the unwanted units cancel.
                         </p>
                     </details>
                 </div>
             </div>
 
             <div class="lecture" id="lecture2">
-                <h2>Lecture 2</h2>
+                <h2>Lecture 2: Elasticity</h2>
                 <div class="box">
                     <h3>Flashcards</h3>
                     <details>
-                        <summary>1. One-to-One Functions & Horizontal Line Test</summary>
-                        <p>A function has an inverse if and only if it is one-to-one (every horizontal line intersects its graph at most once).</p>
+                        <summary>1. Stress</summary>
+                        <p>Force per unit area: $\sigma = \frac{F}{A}$, measured in pascals (Pa = N/m&sup2;). Can be tensile, compressive, or shear stress.</p>
                     </details>
                     <details>
-                        <summary>2. Finding the Inverse Function f<sup>-1</sup>(x)</summary>
-                        <p>Replace $f(x)$ with $y$, solve for $x$ in terms of $y$, and swap $x$ and $y$. Reflected across the line $y = x$.</p>
+                        <summary>2. Strain</summary>
+                        <p>Fractional deformation: $\varepsilon = \frac{\Delta L}{L_0}$. Strain is dimensionless (no units).</p>
                     </details>
                     <details>
-                        <summary>3. Domain, Range & Cancellation Properties</summary>
-                        <p>$D(f^{-1}) = R(f)$ and $R(f^{-1}) = D(f)$. Also, $f(f^{-1}(x)) = x$ and $f^{-1}(f(x)) = x$.</p>
+                        <summary>3. Hooke's Law and Young's Modulus</summary>
+                        <p>Within the elastic limit, stress is proportional to strain: $Y = \frac{F/A}{\Delta L / L_0}$, so $\Delta L = \frac{F L_0}{A Y}$. Units: Pa.</p>
                     </details>
                     <details>
-                        <summary>4. Exponential Functions (y = a<sup>x</sup>)</summary>
-                        <p>Always positive with $D(f) = \mathbb{R}$ and $R(f) = (0, \infty)$, passing through the point $(0, 1)$.</p>
+                        <summary>4. Shear Modulus</summary>
+                        <p>$S = \frac{F/A}{\Delta x / h} = \frac{\text{shear stress}}{\text{shear strain}}$, where $\Delta x / h = \tan\theta \approx \theta$ for small angles.</p>
                     </details>
                     <details>
-                        <summary>5. Natural Logarithm (y = ln(x))</summary>
-                        <p>Inverse of $e^x$ with $D(f) = (0, \infty)$ and $R(f) = \mathbb{R}$. Rules: $\ln(xy) = \ln(x) + \ln(y)$.</p>
+                        <summary>5. Bulk Modulus</summary>
+                        <p>$B = -\frac{\Delta P}{\Delta V / V_0}$. The negative sign shows volume decreases as pressure increases. Compressibility is $k = \frac{1}{B}$.</p>
                     </details>
                     <details>
-                        <summary>6. Derivatives of Exponentials and Logs</summary>
-                        <p>$(e^x)' = e^x$, $(a^x)' = a^x \ln(a)$, $(\ln x)' = 1 / x$, and $(\log_a x)' = 1 / (x \ln(a))$.</p>
+                        <summary>6. Stress-Strain Curve and Elastic Energy</summary>
+                        <p>
+                            <b>Key points:</b> proportional limit &rarr; elastic limit &rarr; yield point &rarr; ultimate strength &rarr; fracture point.<br>
+                            <b>Elastic energy density:</b> $\frac{U}{V} = \frac{1}{2}\sigma\varepsilon = \frac{1}{2} Y \varepsilon^2$.
+                        </p>
                     </details>
                 </div>
             </div>
 
             <div class="lecture" id="lecture3">
-                <h2>Lecture 3</h2>
+                <h2>Lecture 3: Fluid Statics</h2>
                 <div class="box">
                     <h3>Flashcards</h3>
                     <details>
-                        <summary>1. Inverse Trig: sin<sup>-1</sup>(x) & cos<sup>-1</sup>(x)</summary>
-                        <p>Both have Domain $[-1, 1]$. Range of $\sin^{-1}(x)$ is $[-\pi/2, \pi/2]$, while Range of $\cos^{-1}(x)$ is $[0, \pi]$.</p>
+                        <summary>1. Density and Specific Gravity</summary>
+                        <p>Density: $\rho = \frac{m}{V}$ (kg/m&sup3;). Specific gravity: $SG = \frac{\rho}{\rho_{water}}$, where $\rho_{water} = 1000\ \text{kg/m}^3$. SG has no units.</p>
                     </details>
                     <details>
-                        <summary>2. Inverse Trig: tan<sup>-1</sup>(x) & cot<sup>-1</sup>(x)</summary>
-                        <p>Both have Domain $(-\infty, \infty)$. Range of $\tan^{-1}(x)$ is $(-\pi/2, \pi/2)$, while Range of $\cot^{-1}(x)$ is $(0, \pi)$.</p>
+                        <summary>2. Pressure</summary>
+                        <p>$P = \frac{F}{A}$, measured in pascals (Pa). Standard atmosphere: $1\ \text{atm} = 1.013 \times 10^5\ \text{Pa}$.</p>
                     </details>
                     <details>
-                        <summary>3. Inverse Trig: sec<sup>-1</sup>(x) & csc<sup>-1</sup>(x)</summary>
-                        <p>Both have Domain $(-\infty, -1] \cup [1, \infty)$. Ranges correspond to restricted domains of their reciprocal functions.</p>
+                        <summary>3. Pressure Variation with Depth</summary>
+                        <p>$P = P_0 + \rho g h$. The term $\rho g h$ is the gauge pressure. Pressure is the same at all points at the same depth in a connected static fluid.</p>
                     </details>
                     <details>
-                        <summary>4. Key Inverse Trig Identities</summary>
-                        <p>$\sin^{-1}(x) + \cos^{-1}(x) = \pi/2$, $\tan^{-1}(x) + \cot^{-1}(x) = \pi/2$, and $\sec^{-1}(x) = \cos^{-1}(1/x)$.</p>
+                        <summary>4. Pascal's Principle</summary>
+                        <p>A pressure change applied to an enclosed fluid is transmitted undiminished to every part of the fluid. Hydraulic lift: $\frac{F_1}{A_1} = \frac{F_2}{A_2}$.</p>
                     </details>
                     <details>
-                        <summary>5. Derivatives of Inverse Sine & Cosine</summary>
-                        <p>$\frac{d}{dx}[\sin^{-1}(u)] = \frac{u'}{\sqrt{1 - u^2}}$ and $\frac{d}{dx}[\cos^{-1}(u)] = \frac{-u'}{\sqrt{1 - u^2}}$.</p>
+                        <summary>5. Archimedes' Principle and Buoyancy</summary>
+                        <p>Buoyant force equals the weight of the fluid displaced: $B = \rho_{fluid} V_{displaced}\, g$. A floating object has $\frac{V_{submerged}}{V_{object}} = \frac{\rho_{object}}{\rho_{fluid}}$.</p>
                     </details>
                     <details>
-                        <summary>6. Derivatives of Inverse Tangent & Secant</summary>
-                        <p>$\frac{d}{dx}[\tan^{-1}(u)] = \frac{u'}{1 + u^2}$ and $\frac{d}{dx}[\sec^{-1}(u)] = \frac{u'}{|u|\sqrt{u^2 - 1}}$.</p>
+                        <summary>6. Measuring Pressure</summary>
+                        <p>
+                            <b>Barometer:</b> $P_{atm} = \rho g h$ (mercury column of about 760 mm at 1 atm).<br>
+                            <b>Open-tube manometer:</b> measures gauge pressure from the height difference of the liquid in the two arms.
+                        </p>
                     </details>
                 </div>
             </div>
 
             <div class="lecture" id="lecture4">
-                <h2>Lecture 4</h2>
+                <h2>Lecture 4: Fluid Dynamics</h2>
                 <div class="box">
                     <h3>Flashcards</h3>
                     <details>
-                        <summary>1. Definitions of Hyperbolic Functions</summary>
-                        <p>$\sinh(x) = \frac{e^x - e^{-x}}{2}$, $\cosh(x) = \frac{e^x + e^{-x}}{2}$, and $\tanh(x) = \frac{\sinh(x)}{\cosh(x)}$.</p>
+                        <summary>1. Ideal Fluid Assumptions</summary>
+                        <p>An ideal fluid is <b>incompressible</b>, <b>non-viscous</b>, flows in a <b>steady</b> (laminar) manner, and is <b>irrotational</b>.</p>
                     </details>
                     <details>
-                        <summary>2. Reciprocal Hyperbolic Functions</summary>
-                        <p>$\text{sech}(x) = \frac{1}{\cosh(x)}$, $\text{csch}(x) = \frac{1}{\sinh(x)}$, and $\text{coth}(x) = \frac{\cosh(x)}{\sinh(x)}$.</p>
+                        <summary>2. Equation of Continuity</summary>
+                        <p>$A_1 v_1 = A_2 v_2$ (conservation of mass for an incompressible fluid). Volume flow rate: $Q = A v$ (m&sup3;/s).</p>
                     </details>
                     <details>
-                        <summary>3. Fundamental Hyperbolic Identities</summary>
-                        <p>$\cosh^2(x) - sinh^2(x) = 1$, $1 - \tanh^2(x) = \text{sech}^2(x)$, and $\text{coth}^2(x) - 1 = \text{csch}^2(x)$.</p>
+                        <summary>3. Bernoulli's Equation</summary>
+                        <p>Along a streamline: $P + \frac{1}{2}\rho v^2 + \rho g y = \text{constant}$. It expresses conservation of energy for a flowing fluid.</p>
                     </details>
                     <details>
-                        <summary>4. Hyperbolic Derivatives</summary>
-                        <p>$(\sinh u)' = \cosh(u)u'$, $(\cosh u)' = \sinh(u)u'$, and $(\tanh u)' = \text{sech}^2(u)u'$.</p>
+                        <summary>4. Torricelli's Theorem</summary>
+                        <p>Speed of efflux from a hole at depth $h$ below the open surface of a tank: $v = \sqrt{2 g h}$.</p>
                     </details>
                     <details>
-                        <summary>5. Logarithmic Forms of Inverse Hyperbolic Functions</summary>
-                        <p>$\sinh^{-1}(x) = \ln(x + \sqrt{x^2 + 1})$ and $\cosh^{-1}(x) = \ln(x + \sqrt{x^2 - 1})$ for $x \ge 1$.</p>
+                        <summary>5. Viscosity, Poiseuille's Law, and Stokes' Law</summary>
+                        <p>
+                            <b>Poiseuille's law:</b> $Q = \frac{\pi r^4 \Delta P}{8 \eta L}$.<br>
+                            <b>Stokes' law (drag on a sphere):</b> $F = 6\pi \eta r v$.<br>
+                            Viscosity $\eta$ is measured in Pa&middot;s.
+                        </p>
                     </details>
                     <details>
-                        <summary>6. Inverse Hyperbolic Derivatives</summary>
-                        <p>$(\sinh^{-1}x)' = \frac{1}{\sqrt{1 + x^2}}$ and $(\tanh^{-1}x)' = \frac{1}{1 - x^2}$ for $|x| < 1$.</p>
+                        <summary>6. Reynolds Number</summary>
+                        <p>$Re = \frac{\rho v D}{\eta}$. Roughly, $Re < 2000$ means laminar flow and $Re > 4000$ means turbulent flow, with a transition region in between.</p>
                     </details>
                 </div>
             </div>
 
             <div class="lecture" id="lecture5">
-                <h2>Lecture 5</h2>
+                <h2>Lecture 5: Oscillatory Motion</h2>
                 <div class="box">
                     <h3>Flashcards</h3>
                     <details>
-                        <summary>1. L'H&ocirc;pital's Rule Basics</summary>
-                        <p>If $\lim \frac{f(x)}{g(x)}$ produces $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then $\lim \frac{f(x)}{g(x)} = \lim \frac{f'(x)}{g'(x)}$.</p>
+                        <summary>1. Simple Harmonic Motion (SHM)</summary>
+                        <p>Motion under a restoring force proportional to displacement: $F = -kx$, giving $a = -\omega^2 x$.</p>
                     </details>
                     <details>
-                        <summary>2. Repeated Application of L'H&ocirc;pital's Rule</label></summary>
-                        <p>You can apply L'H&ocirc;pital's Rule multiple times consecutively as long as the limit remains an indeterminate form.</p>
+                        <summary>2. Position, Velocity, and Acceleration in SHM</summary>
+                        <p>
+                            $x = A\cos(\omega t + \phi)$, $v = -A\omega\sin(\omega t + \phi)$, $a = -A\omega^2\cos(\omega t + \phi)$.<br>
+                            Maximum values: $v_{max} = A\omega$ and $a_{max} = A\omega^2$.
+                        </p>
                     </details>
                     <details>
-                        <summary>3. Indeterminate Products (0 &middot; &infin;)</summary>
-                        <p>Rewrite $f(x) \cdot g(x)$ as a fraction $\frac{f(x)}{1/g(x)}$ or $\frac{g(x)}{1/f(x)}$ to apply L'H&ocirc;pital's Rule.</p>
+                        <summary>3. Frequency, Period, and the Mass-Spring System</summary>
+                        <p>$\omega = 2\pi f = \frac{2\pi}{T}$. For a mass on a spring: $\omega = \sqrt{\frac{k}{m}}$ and $T = 2\pi\sqrt{\frac{m}{k}}$.</p>
                     </details>
                     <details>
-                        <summary>4. Indeterminate Differences (&infin; - &infin;)</summary>
-                        <p>Combine terms into a single fraction using a common denominator before evaluating limits.</p>
+                        <summary>4. Simple Pendulum</summary>
+                        <p>For small angles (about $15^\circ$ or less): $T = 2\pi\sqrt{\frac{L}{g}}$. The period does not depend on the mass or amplitude.</p>
                     </details>
                     <details>
-                        <summary>5. Indeterminate Powers (1<sup>&infin;</sup>, 0<sup>0</sup>, &infin;<sup>0</sup>)</summary>
-                        <p>For $y = [f(x)]^{g(x)}$, take natural logs: $\ln(y) = g(x)\ln(f(x))$, evaluate the limit, and use $e^L$.</p>
+                        <summary>5. Energy in SHM</summary>
+                        <p>Total energy: $E = \frac{1}{2}kA^2$ (constant). Kinetic energy: $K = \frac{1}{2}k(A^2 - x^2)$. Speed: $v = \omega\sqrt{A^2 - x^2}$.</p>
                     </details>
                     <details>
-                        <summary>6. Essential Standard Limits</summary>
-                        <p>Memorize foundational limits like $e^\infty = \infty$, $e^{-\infty} = 0$, and $\ln(0^+) = -\infty$.</p>
+                        <summary>6. Damped and Forced Oscillations, Resonance</summary>
+                        <p>
+                            <b>Damped:</b> amplitude decays, $x = A e^{-bt/2m}\cos(\omega' t + \phi)$.<br>
+                            <b>Resonance:</b> large amplitude occurs when the driving frequency is close to the natural frequency of the system.
+                        </p>
                     </details>
                 </div>
             </div>
 
             <div class="lecture" id="lecture6">
-                <h2>Lecture 6</h2>
+                <h2>Lecture 6: Waves</h2>
                 <div class="box">
                     <h3>Flashcards</h3>
                     <details>
-                        <summary>1. Taylor Series Formula</summary>
-                        <p>$f(x) = \sum \frac{f^{(n)}(c)}{n!}(x - c)^n = f(c) + f'(c)(x - c) + \frac{f''(c)}{2!}(x - c)^2 + \dots$</p>
+                        <summary>1. Types of Waves</summary>
+                        <p>
+                            <b>Transverse:</b> particles move perpendicular to the direction of wave travel.<br>
+                            <b>Longitudinal:</b> particles move parallel to the direction of wave travel (e.g. sound).<br>
+                            Mechanical waves need a medium; electromagnetic waves do not.
+                        </p>
                     </details>
                     <details>
-                        <summary>2. Maclaurin Series Formula</summary>
-                        <p>A Taylor series centered at $c = 0$: $f(x) = \sum \frac{f^{(n)}(0)}{n!}x^n = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \dots$</p>
+                        <summary>2. Wave Speed</summary>
+                        <p>$v = f\lambda$. For a string under tension $T$ with mass per unit length $\mu$: $v = \sqrt{\frac{T}{\mu}}$.</p>
                     </details>
                     <details>
-                        <summary>3. Standard Maclaurin Expansions</summary>
-                        <p>$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$ and $\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots$</p>
+                        <summary>3. Traveling Wave Function</summary>
+                        <p>$y(x,t) = A\sin(kx - \omega t)$, where $k = \frac{2\pi}{\lambda}$, $\omega = 2\pi f$, and $v = \frac{\omega}{k}$.</p>
                     </details>
                     <details>
-                        <summary>4. Center-Radius Form of a Circle</summary>
-                        <p>The equation of a circle with center $(h, k)$ and radius $r$ is $(x - h)^2 + (y - k)^2 = r^2$.</p>
+                        <summary>4. Superposition and Interference</summary>
+                        <p>
+                            <b>Constructive:</b> path difference $= n\lambda$.<br>
+                            <b>Destructive:</b> path difference $= (n + \tfrac{1}{2})\lambda$.
+                        </p>
                     </details>
                     <details>
-                        <summary>5. Completing the Square</label></summary>
-                        <p>Convert general quadratic expressions $x^2 \pm ax + b$ into vertex/center-radius form to isolate $(h, k)$ and $r$.</p>
+                        <summary>5. Standing Waves on a String</summary>
+                        <p>Fixed at both ends: $\lambda_n = \frac{2L}{n}$ and $f_n = \frac{n v}{2L}$, for $n = 1, 2, 3, \dots$ Nodes have zero displacement; antinodes have maximum displacement.</p>
                     </details>
                     <details>
-                        <summary>6. Tangent & Normal Lines to a Circle</label></summary>
-                        <p>Find the tangent slope using implicit differentiation ($y' = \frac{h-x}{y-k}$). The normal slope is $-1/m$.</p>
+                        <summary>6. Sound Waves and the Doppler Effect</summary>
+                        <p>
+                            Speed of sound in air at $20^\circ$C is about $343\ \text{m/s}$.<br>
+                            <b>Doppler effect:</b> $f' = f\,\frac{v \pm v_{o}}{v \mp v_{s}}$, using the upper sign when the observer moves toward the source or the source moves toward the observer.
+                        </p>
                     </details>
                 </div>
             </div>
@@ -236,7 +265,6 @@
             <div class="box">
                 <h3>Additional Resources and Links</h3>
                 <ul>
-                    <li><a href="https://wayground.com/" target="_blank">Quizzes Site (Search for concepts)</a></li>
                     <li><a href="https://quizlet.com/" target="_blank">Quizlet (Interactive flashcards)</a></li>
                     <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
                 </ul>
